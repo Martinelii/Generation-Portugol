@@ -13,7 +13,7 @@ programa
 	{
 		inteiro vetor[10]
 		real somaVetor=0
-		real mediaVetor=0
+		inteiro mediaVetor=0
 		inteiro i //contador
 		
 		//Populando o vetor
@@ -21,11 +21,11 @@ programa
 			escreva("Informe um numero inteiro para adicionar ao vetor:")
 			leia(vetor[i])
 		}
-		//Exibindo numeros nos índices pares & contabilizando a soma do vetor.
+		//Exibindo numeros nos índices impar & contabilizando a soma do vetor.
 		para(i=0;i<10;i++){
 			somaVetor += vetor[i]
-			se(i%2==0){
-				escreva("Indice par[",i,"] elemento: ",vetor[i],"\n")
+			se(i%2!=0){
+				escreva("Indice impar[",i,"] elemento: ",vetor[i],"\n")
 			}
 		}
 		//Exibindo Elementos do vetor que são par .
@@ -48,7 +48,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 590; 
+ * @POSICAO-CURSOR = 423; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
